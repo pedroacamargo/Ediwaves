@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bitter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --cor01: #0477BF;
+    --cor02: #0B3B59;
+    --cor03: #048ABF;
+    --cor04: #0A4359;
+    --cor05: #CDE5F6;
+    --cor06: #F2F2F2;
+
+    --font01: 'Bitter', serif;
+    --font02: 'Arvo', serif;
+    --font03: 'Roboto Mono', monospace;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .options-container > a {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .menu-square {
+        width: 50px;
+        height: 50px;
+        margin: 2px 20px 2px 2px;
+        border-radius: 5px;
+        border: 1px solid black;
+        box-shadow: 1px 1px 5px black;
+        transition: .5s;
+        background-image: linear-gradient(to right, #006DA8, #11095c, blue);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .line {
+        width: 35px;
+        height: 3px;
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        top: 30%;
+        transition: .5s;
+    }
+
+    .l1 {
+        top: 20%;
+    }
+
+    
+
+    .l3 {
+        top: 40%;
+    }
+
+    .line:first-child {
+        margin-top: 2px;
+    }
+
+    .underline {
+        font-size: .6em;
+        letter-spacing: 3px;
+        margin-top: 3px;
+        padding-top: 25px;
+        color: white;
+        font-family: var(--font03);
+        cursor: default;
+    }
+
+    .slide-menu {
+        width: 70vw;
+        height: 96vh;
+        position: absolute;
+        top: 100%;
+        background-color: #11095c;
+        left: 0px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .linex {
+        transform: rotate(45deg);
+        top: 27%;
+    }
+
+    .liney {
+        transform: rotate(-45deg);
+        top: 37%;
+    }
+
+    .linez {
+        top: -20px;
+        transform: rotate(180deg);
+        
+    }
+}

@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ediwaves</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/default.css" media="all">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
 </head>
 <body>
     <script src="script.js"></script>
 
 
-    <header class="header">
+    <header>
+
         <div class="navbar" id="header">
             <div class="logo"><img src="images/ediwaves-logotp.png" alt=""></div>
             <div class="options-container">
@@ -20,8 +22,18 @@
                 <a href="#" class="btn about-btn">METODOLOGIA</a>
                 <a href="#" class="btn about-btn">SOBRE</a>
             </div>
-           
+           <!-- Mobile -->
+            <div class="menu-square" id="menubtn" onclick="changeMenuSquare(0)">
+                <div class="line l1" id="line1"></div> <!--y-->
+                <div class="line l2" id="line2"></div> <!--z-->
+                <div class="line l3" id="line3"></div> <!--x-->
+                <div class="underline">MENU</div>
+            </div>
+
+            <div class="slide-menu"></div>
         </div>
+
+        
     </header>
 
     <div class="first-bg">
@@ -44,6 +56,5 @@
     
     <div class="test"></div>
 
-    <!--FAZER O EDIWAVES NA FRENTE, ARRUMAR E FAZER UM FLEXBOX-->
 </body>
 </html>
