@@ -203,3 +203,11 @@ html, body {
     background-color: wheat;
 }
 
+main {
+    padding: 10px;
+}
+
+.history {
+    height: 200px;
+    background-color: blue;
+}

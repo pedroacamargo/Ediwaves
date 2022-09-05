@@ -19,7 +19,7 @@
     --font03: 'Roboto Mono', monospace;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
 
     .options-container > a {
         display: none;
@@ -67,8 +67,6 @@
         top: 20%;
     }
 
-    
-
     .l3 {
         top: 40%;
     }
@@ -89,11 +87,11 @@
 
     .slide-menu {
         display: block;
-        width: 30vw;
+        width: 150px;
         z-index: 15;
         position: absolute;
         top: 100%;
-        background-image: radial-gradient(rgb(14, 14, 248) 40%, #0104cf 70%, #05106d 98%);
+        background-image: radial-gradient(rgb(14, 14, 248) 40%, #0104cf 70%);
         right: -40vw;
         border: 1px solid black;
         border-radius: 0 0 0 20px;
@@ -128,7 +126,7 @@
         text-decoration: none;
         padding: 20px 0;
         width: 100%;
-        font-size: 2.7vw;
+        font-size: 1em;
         font-weight: 200;
         display: block;
         border-bottom: 2px solid black;
@@ -192,6 +190,5 @@
     .text-place > h2 {
         display: none;
     }
-    
 }
 
