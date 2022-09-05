@@ -204,10 +204,107 @@ html, body {
 }
 
 main {
-    padding: 10px;
+    background-color: black;
+    overflow: hidden;
 }
 
 .history {
-    height: 200px;
-    background-color: blue;
+    padding: 10px;
+    box-sizing: border-box;
+    padding: 50px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    color: black;
+}
+
+.director {
+    background-color: var(--cor06);
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 3px solid var(--cor02);
+    border-radius: 10px;
+
+}
+
+.presentation {
+    flex: 1;
+    padding: 50px;
+}
+
+.characterer-name {
+    text-align: center;
+    font-family: var(--font05);
+    padding: 10px;
+    font-size: 3em;
+    color: #CDE5F6;
+    background-color: #048ABF;
+    position: relative;
+    top: -100px;
+    left: 0%;
+    border-radius: 50px;
+    border: 3px solid var(--cor02);
+}
+
+.presentation > h1{
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.226);
+    font-family: var(--font01);
+    font-size: 1.7em;
+    margin-top: -70px;
+}
+
+.row {
+    height: 2px;
+    width: 50px;
+    background-color: #0477BF;
+    margin: 10px 0px;
+    transition: 1s;
+}
+
+.history:hover > .director > .presentation >.row {
+    width: 100%;
+}
+
+.presentation > p {
+    font-family: var(--font02);
+    text-align: justify;
+    font-size: 1.3em;
+    text-indent: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
+}
+
+.characterer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.characterer-img {
+    width: 300px;
+    height: 400px;
+    background-image: url(../images/charactererp.jpg);
+    clip-path: polygon(14% 0%, 94% 6%, 93% 90%, 9% 96%);
+    animation-name: img-square;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes img-square {
+    0% {clip-path: polygon(14% 0%, 94% 6%, 93% 90%, 9% 96%);}
+    20% {clip-path: polygon(18% 3%, 95% 17%, 79% 93%, 7% 80%);}
+    40% {clip-path: polygon(36% 0%, 93% 32%, 61% 99%, 2% 61%);}
+    60% {clip-path: polygon(52% 2%, 100% 49%, 43% 95%, 0% 34%);}
+    80% {clip-path: polygon(73% 0%, 93% 62%, 21% 91%, 0% 18%);}
+    100% {clip-path: polygon(77% 6%, 86% 78%, 11% 88%, 9% 9%);}
 }
