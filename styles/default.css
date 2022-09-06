@@ -45,7 +45,7 @@ html, body {
 }
 
 .bgchange {
-    background-color: #1410eb;
+    background-color: #1410ebbe;
     border-bottom: 1px solid black;
 }
 
@@ -103,7 +103,7 @@ html, body {
 .transparency-gradient {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 90%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,27 +208,38 @@ main {
     overflow: hidden;
 }
 
-.history {
-    padding: 10px;
+#canvas, #canvas2{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+#canvas3 {
+    position: absolute;
+}
+
+.enterprise-director-section {
     box-sizing: border-box;
-    padding: 50px;
-    max-width: 1000px;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: black;
+    background-image: url(../images/conceito-do-pensamento-criativo-e-analítico-81927679\ \(2\).jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
     color: black;
 }
 
 .director {
-    background-color: var(--cor06);
+    background-color: wheat;
     display: flex;
     flex-direction: row;
     padding: 10px;
     border: 3px solid var(--cor02);
     border-radius: 10px;
+    max-width: 1000px;
+    box-shadow: 2px 2px 15px black;
 
 }
 
@@ -242,19 +253,20 @@ main {
     font-family: var(--font05);
     padding: 10px;
     font-size: 3em;
-    color: #CDE5F6;
-    background-color: #048ABF;
+    color: white;
+    background-color: black;
     position: relative;
     top: -100px;
     left: 0%;
     border-radius: 50px;
     border: 3px solid var(--cor02);
+    transition: 1s;
 }
 
 .presentation > h1{
     text-align: center;
     color: black;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.226);
+    
     font-family: var(--font01);
     font-size: 1.7em;
     margin-top: -70px;
@@ -268,16 +280,16 @@ main {
     transition: 1s;
 }
 
-.history:hover > .director > .presentation >.row {
+.enterprise-director-section:hover > .director > .presentation >.row {
     width: 100%;
 }
 
 .presentation > p {
     font-family: var(--font02);
+    color: rgb(48, 48, 48);
     text-align: justify;
     font-size: 1.3em;
     text-indent: 30px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
 }
 
 .characterer {
@@ -307,4 +319,79 @@ main {
     60% {clip-path: polygon(52% 2%, 100% 49%, 43% 95%, 0% 34%);}
     80% {clip-path: polygon(73% 0%, 93% 62%, 21% 91%, 0% 18%);}
     100% {clip-path: polygon(77% 6%, 86% 78%, 11% 88%, 9% 9%);}
+}
+
+.enterprise-history-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.slide-item {
+    flex: 1;
+    height: 100%;
+    transition: .5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center;
+    overflow: hidden;
+}
+
+.slide-item:hover {
+    flex: 4;
+}
+
+.item1 {
+    background-image: url(../images/DSC_0250.jpg);
+    border-right: 3px solid black;
+}
+
+.item2 {
+    background-image: url(../images/DSC_0081-2.jpg);
+    border-right: 3px solid black;
+}
+
+.item3 {
+    background-image: url(../images/DSC_0060.jpg);
+    border-right: 3px solid black;
+}
+
+.item4 {
+    background-image: url(../images/foto-livro.jpg);
+}
+
+.slide-item-textarea {
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+    top: 18%;
+    background-color: rgba(0, 0, 0, 0.808);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slide-item:hover > .slide-item-textarea{
+    visibility: visible;
+    transition: .5s;
+    opacity: .9;
+    transition-delay: .5s;
+}
+
+.slide-item-textarea > h1 {
+    font-family: var(--font01);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.slide-item-textarea > p {
+    font-family: var(--font02);
+    text-indent: 20px;
+    text-align: justify;
 }

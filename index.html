@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="styles/default.css" media="all">
     <link rel="stylesheet" href="styles/mediaqueries.css">
 </head>
-<body id="home">
-    <script src="scripts/script.js"></script>
+<body>
+    
 
 
-    <header>
+    <header id="home">
 
         <div class="navbar" id="header">
-            <div class="logo"><img src="images/ediwaves-logotp.png" alt="Alunos da Orientadora Elsa numa palestra todos com o braço para o alto"></div>
+            <div class="logo"><img src="images/ediwaves-logotp.png" alt="Palestra da orientadora para estudantes        "></div>
             <div class="options-container">
                 <a href="#home" class="btn about-btn">HOME</a>
+                <a href="#about" class="btn about-btn">SOBRE</a>
                 <a href="#" class="btn contacts-btn">CONTATOS</a>
                 <a href="#" class="btn about-btn">METODOLOGIA</a>
-                <a href="#" class="btn about-btn">SOBRE</a>
             </div>
+
+
            <!-- Mobile -->
             <div class="menu-square" id="menubtn" onclick="changeMenuSquare(0)">
                 <div class="line l1" id="line1"></div> <!--y-->
@@ -32,9 +34,10 @@
 
             <div class="slide-menu" id="slideMenu">
                 <a href="#home" class="mobile-btn about-btn">HOME</a>
+                <a href="#about" class="mobile-btn about-btn">SOBRE</a>
                 <a href="#" class="mobile-btn contacts-btn">CONTATOS</a>
                 <a href="#" class="mobile-btn about-btn">METODOLOGIA</a>
-                <a href="#" class="mobile-btn about-btn">SOBRE</a>
+                
                 
             </div>
             <!-- <div class="opacity-men" id="opacity"></div> -->
@@ -54,7 +57,7 @@
                 <h2>Projetos Educacionais</h2>
                 <q>A inteligência é o farol que nos guia, mas é a vontade que nos faz caminhar.</q>
             </div>
-            <a href="#" class="flashy-btn">
+            <a href="#about" class="flashy-btn">
                 <span>Conheça</span>
 
             </a>
@@ -62,28 +65,64 @@
     
     </div>
     
-    <main>
+    
 
-        <section class="history">
-            <div class="director">
-            
-                <div class="presentation">
-                    <div class="characterer-name">Elsa Ennes</div>
-                    <h1>Diretora da Empresa Ediwaves <br></h1>
-                    <div class="row"></div>
-                    <p>Pedagoga, com habilitação em Orientação
-                        Educacional, Coordenação Pedagógica, e Docência
-                        do Ensino Superior. Possui mais de 30 anos na área
-                        da Educação com experiência em todas as faixas de
-                        idade.</p>
-                </div>
-                <div class="characterer">
-                    <div class="characterer-img"></div>
-                </div>
+    <section class="enterprise-director-section" id="about">
+        <canvas id="canvas" width="1000px" height="200px"></canvas>
+        <div class="director">
+        
+            <div class="presentation">
+                <div class="characterer-name">Elsa Ennes</div>
+                <h1>Diretora da Empresa Ediwaves <br></h1>
+                <div class="row"></div>
+                <p>Pedagoga, com habilitação em Orientação
+                    Educacional, Coordenação Pedagógica, e Docência
+                    do Ensino Superior. Possui mais de 30 anos na área
+                    da Educação com experiência em todas as faixas de
+                    idade. Especialista em Orientação Profissional de Jovens
+                    em fase de escolha da carreira e reorientação
+                    profissional.
+                    Especialista em Mapeamento de Perfil
+                    Comportamental
+                    Coautora do livro O Poder da Escolha, editora
+                    conquista.</p>
+            </div>
+            <div class="characterer">
+                <div class="characterer-img"></div>
+            </div>
         </div>
-        </section>
+        <canvas id="canvas2" width="1000px" height="200px"></canvas>
+    </section>
+    
+    <section class="enterprise-history-section">
+        <canvas id="canvas3" width="1000px" height="200px"></canvas>
+        <div class="slide-item item1">
+            <div class="slide-item-textarea">
+                <h1>Porque a Ediwaves foi criada?</h1>
+                <p><strong>Ediwaves Projetos Educacionais</strong> foi criada em 2008, em homenagem ao Edmundo, meu irmão caçula que faleceu com 21 anos de idade, em 1997.</p>
+            </div>
+        </div>
+        <div class="slide-item item2">
+            <div class="slide-item-textarea">
+                <h1>O que significa "Ediwaves"?</h1>
+                <p>O significado do nome Edi de Edmundo e Waves de ondas do mar, por ser um jovem atleta, gostava de esportes e adorava o mar, ficando Ediwaves .</p>
+            </div>
+        </div>
+        <div class="slide-item item3">
+            <div class="slide-item-textarea">
+                <h1>Ediwaves é uma empresa jovem para jovens que desejam fazer a diferença no mundo.</h1>
+            </div>
+        </div>
+        <div class="slide-item item4">
+            <div class="slide-item-textarea">
+                <h1>O Poder da Escolha</h1>
+                <p>Elsa Ennes é Coautora do livro "O Poder da Escolha", da editora Conquista. Elsa escreveu um capítulo do livro, passando sua experiência na área da orientação profissional para os leitores.</p>
+            </div>
+        </div>
+    </section>
 
-    </main>
-
+    
+<script src="scripts/script.js"></script>
+<script src="scripts/canvas.js"></script>
 </body>
 </html>
