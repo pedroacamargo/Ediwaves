@@ -1,47 +1,10 @@
-<a href="#home" class="flashy-btn">
-    <span>Conheça</span>
-
-</a>
-
-
-.flashy-btn {
-    width: 200px;
-    height: 80px;
-    background-color: black;
-    transform: translate(-50%, -50%);
-    top: 70%;
-    left: 50%;
-    text-align: center;
-    border-radius: 10px;
-    font-family: var(--font01);
-    color: black;
-    line-height: 75px;
-    display: block;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid white;
-}
-
-
-.flashy-btn span, .flashy-btn {
-    z-index: 2;
-    position: relative;
-    text-decoration: none;
-    color: white;
-    font-family: var(--font01);
-    font-size: 1.2em;
-}
-
-.flashy-btn::before {
-    content: "";
-    width: 500px;
-    height: 100px;
-    left: 200px; /*0px 50px */
-    background-color: #006DA8;
-    position: absolute;
-    transition: 1s;
-}
-
-.flashy-btn:hover::before {
-    left: 0px;
-}
+<blockquote>
+                    
+                    <p>O trabalho que participei foi algo mágico, abrindo portas, visões essencias, a minha visão de futuro. O planejamento, o cronograma foi bem definido desde o início, não havendo possíveis enrolações, e a objetividado nas tarefas foi muito satisfatória. Todas as minhas vindas foram encontros de altos valores vivências, em nenhum momento "obrigados", sendo sempre valiosos. Gostei muito mesmo de ter participado do trabalho de orientação profissional, saio daqui com uma mente/visão mais aberta e aprimorada do que diz respeito as profissões e faculdades. Do fundo do meu coração, meus mais sinceros agradecimentos, Elsa!</p> <br>
+                    <cite>Matheus, 17 anos - 3° ano EM</cite>
+                </blockquote>
+                <blockquote>
+                    
+                    <p>O trabalho que participei foi algo mágico, abrindo portas, visões essencias, a minha visão de futuro. O planejamento, o cronograma foi bem definido desde o início, não havendo possíveis enrolações, e a objetividado nas tarefas foi muito satisfatória. Todas as minhas vindas foram encontros de altos valores vivências, em nenhum momento "obrigados", sendo sempre valiosos. Gostei muito mesmo de ter participado do trabalho de orientação profissional, saio daqui com uma mente/visão mais aberta e aprimorada do que diz respeito as profissões e faculdades. Do fundo do meu coração, meus mais sinceros agradecimentos, Elsa!</p> <br>
+                    <cite>Matheus, 17 anos - 3° ano EM</cite>
+                </blockquote>

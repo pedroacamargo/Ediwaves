@@ -208,7 +208,7 @@ main {
     overflow: hidden;
 }
 
-#canvas, #canvas2{
+#canvas, #canvas2, #canvas3{
     width: 100%;
     height: 100px;
     position: relative;
@@ -396,74 +396,107 @@ main {
     text-align: justify;
 }
 
-.quotes-section {
+.attendances {
     border-top: 5px solid black;
-    background-color: whitesmoke;
-    transition: 1s;
-}
-
-.quotes-section-wrapper {
-    text-align: justify;
-    position: relative;
-    background-color: whitesmoke;
-    margin: 40px;
-    border: 3px solid #0477BF;
-    z-index: 10;
-}
-
-.quotes-section-wrapper::before, .quotes-section-wrapper::after {
-    content: "";
     width: 100%;
-    height: 100%;
-    border: 3px solid #0477BF;
-    position: absolute;
-    border-bottom: 3px solid #0477BF;
-    border-right: 3px solid #0477BF;
-    top: 20px;
-    left: 20px;
-    z-index: 0;
-}
-
-.quotes-section-wrapper::after {
-    top: -20px;
-    left: -20px;
-}
-
-/*.quotes-section-wrapper:hover {
-    transform: translate(-5px, -5px);
-    box-shadow: 3px 3px 10px black;
-}*/
-
-.quotes-textarea {
-    padding: 50px;
-    box-sizing: border-box;
+    background-image: url(../images/background-calls.jpg);
+    background-color: #1a5376;
+    background-blend-mode: lighten;
+    background-attachment: local;
+    background-size: cover;
+    background-position: 50% 0%;
     
 }
 
-
-
-blockquote > p{
-    font-family: var(--font01);
-    font-size: 1.3em;
-    line-height: 25px;
-    text-indent: 20px;
-    border-left: 5px solid #0477BF;
-    padding-left: 30px;
-    font-style: italic;
-    font-weight: 600;
-}
-blockquote > p::before, blockquote > p::after {
-    content: "''";
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1em;
-    color: #0477BF;
+.section-textarea {
     position: relative;
-    left: 0;
+    padding: 50px;
+    background-color: black;
+    text-align: center;
+    font-family: var(--font01);
+    color: white;
+    font-size: 2em;
+    letter-spacing: 10px;
 }
 
-cite {
-    border-left: 0;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.4em;
+.section-textarea::after {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border: 5px solid black;
+    top: 100px;
+    left: 48%;
+    transform: rotate(45deg);
 }
 
+.attendances-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.attendances-item {
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px black;
+    position: relative;
+    border-radius: 20px;
+    height: 450px;
+    width: 330px;
+    background-color: rgb(142, 208, 241);
+    border: 2px solid black;
+    margin: 60px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.attendances-item::before {
+    content: url(../images/sharp_priority_high_white_36dp.png);
+    position: absolute;
+    border: 2px solid black;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #0477BF;
+    top: 0;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.attendances-item-1::before {
+    content: url(../images/sharp_school_white_36dp.png);
+}
+
+.attendances-item-2::before {
+    content: url(../images/sharp_computer_white_36dp.png);
+}
+
+
+.attendances-img {
+    margin-top: 20px;
+    width: 90%;
+    border: 1px solid black;
+}
+
+.attendances-item h1 {
+    font-family: var(--font01);
+    font-size: 1.5em;
+    color: var(--cor02);
+    margin-top: 20px;
+    line-height: 10px;
+}
+
+.attendances-item p {
+    font-family: var(--font01);
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.1em;
+}
