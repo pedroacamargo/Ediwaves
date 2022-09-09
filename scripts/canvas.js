@@ -7,11 +7,9 @@ var c3 = canvas3.getContext('2d')
 var grad = c.createLinearGradient(0,0,0,169);
 grad.addColorStop(.1, "black");
 grad.addColorStop(1, "blue");
-var grad3 = c3.createLinearGradient(0,0,0,200);
-grad3.addColorStop(.5, "black");
-grad3.addColorStop(1, "blue");
 c.fillStyle = grad;
 c2.fillStyle = "black"
+c3.fillStyle = "black"
 c.beginPath();
 c.moveTo(0,0)
 c.lineTo(1090,0)
@@ -32,3 +30,9 @@ c2.lineTo(1090, 200)
 c2.closePath()
 c2.fill()
 
+c3.beginPath()
+c3.moveTo(450, 0)
+c3.lineTo(550, 0)
+c3.lineTo(500, 100)
+c3.closePath()
+c3.fill()
