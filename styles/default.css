@@ -208,7 +208,7 @@ main {
     overflow: hidden;
 }
 
-#canvas, #canvas2, #canvas3{
+#canvas, #canvas2, #canvas3, #canvas4, #canvas5{
     width: 100%;
     height: 100px;
     position: relative;
@@ -216,6 +216,10 @@ main {
 
 #canvas3 {
     position: absolute;
+}
+
+#canvas4 {
+    margin-bottom: -4px;
 }
 
 .enterprise-director-section {
@@ -504,6 +508,103 @@ main {
 
 
 
+
+
+
+.quotes-section {
+    background-image: url(../images/sea-photo.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-color: #0c6399;
+    background-blend-mode: color-burn;
+}
+
+.t02 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 40%, rgb(0, 0, 0) 99%);
+}
+
+.quotes-section-wrapper {
+    padding: 20px;
+    position: relative;
+}
+
+.quote {
+    background-color: rgba(255, 255, 255, 0);
+    width: 70%;
+    padding: 20px 10px 30px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.1em;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.q01 {
+    margin-top: 0;
+}
+
+.q02 {
+    position: relative;
+    left: 30%;
+}
+
+blockquote > p {
+    position: relative;
+    font-family: var(--font02);
+    font-style: italic;
+    line-height: 25px;
+    padding: 15px;
+    border-left: 6px solid #0477BF;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.429);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.p02 {
+    border-radius:  30px 0px 0px 30px;
+    border-right: 6px solid #0477BF;
+    border-left: 0px solid white;
+}
+
+blockquote > p > span::before {
+    content: open-quote;
+    font-size: 1.5em;
+    color: #0477BF;
+    
+}
+
+blockquote > p > span::after {
+    content: close-quote;
+    font-size: 1.5em;
+    color: #0477BF;
+
+}
+
+.qcite {
+    position: relative;
+    font-family: var(--font02);
+    font-style: italic;
+    line-height: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 6px solid #ff7b00;
+    border-left: 6px solid #ff7b00;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.429);
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: -16px;
+}
+
+.tesst {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.qcite::before {
+    content: "~ ";
+}
 
 footer {
     display: flex;
