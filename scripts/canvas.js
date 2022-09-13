@@ -14,7 +14,7 @@ grad.addColorStop(1, "blue");
 c.fillStyle = grad;
 c2.fillStyle = "black"
 c3.fillStyle = "black"
-c4.fillStyle = "black"
+c4.fillStyle = "#0477BF"
 c.beginPath();
 c.moveTo(0,0)
 c.lineTo(1090,0)
