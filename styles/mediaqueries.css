@@ -27,6 +27,7 @@
 
     .navbar {
         justify-content: space-between;
+        width: 100%;
     }
 
     .logo {
@@ -92,7 +93,7 @@
         position: absolute;
         top: 100%;
         background-image: radial-gradient(rgb(14, 14, 248) 40%, #0104cf 70%);
-        right: -40vw;
+        right: -80vw;
         border: 1px solid black;
         border-radius: 0 0 0 20px;
         transition: 1s;
@@ -190,5 +191,80 @@
     .text-place > h2 {
         display: none;
     }
-}
 
+    /*attendances*/
+
+    .section-textarea {
+        font-size: 4vw;
+    }
+
+    .attendances-item {
+        margin: 50px 10px 10px 10px;
+    }
+
+    /*director section*/
+    
+    .enterprise-director-section > .director{
+        display: none;
+    }
+
+    .characterer-name {
+        font-size: 10vw;
+    }
+
+    /*esterprise history*/
+
+    .enterprise-history-section {
+        flex-direction: column;
+    }
+
+    .slide-item {
+        background-color: #000000db;
+        background-blend-mode: darken;
+    }
+
+    .slide-item:hover {
+        background-color: #00306000;
+    }
+    
+    /*Specifications*/
+    
+    .specifications-section-wrapper > h1 {
+        margin-top: 10px;
+        font-size: 7vw;
+    }
+
+    .orientation-about-item {
+        margin: 50px 10px 10px 10px;
+    }
+
+    /*Quotes*/
+
+    .q03 {
+        width: 100%;
+        font-size: .9em;
+        font-weight: bold;
+    }
+
+    .q01, .q02 {
+        display: none;
+    }
+    
+    /*footer*/
+    
+    .logo.footer > img{
+        height: 50px;
+    }
+
+    .column {
+        height: 20vw;
+    }
+
+    .footer-textarea > p {
+        font-size: 3vw;
+    }
+    
+    .mail, .tel {
+        font-size: 3vw;
+    }
+}

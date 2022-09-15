@@ -3,11 +3,13 @@ var canvas2 = document.getElementById("canvas2")
 var canvas3 = document.getElementById("canvas3")
 var canvas4 = document.getElementById("canvas4")
 var canvas5 = document.getElementById("canvas5")
+var canvas6 = document.getElementById("canvas6")
 var c = canvas.getContext('2d'); 
 var c2 = canvas2.getContext('2d')
 var c3 = canvas3.getContext('2d')
 var c4 = canvas4.getContext('2d')
 var c5 = canvas5.getContext('2d')
+var c6 = canvas6.getContext('2d')
 var grad = c.createLinearGradient(0,0,0,169);
 grad.addColorStop(.1, "black");
 grad.addColorStop(1, "blue");
@@ -15,6 +17,8 @@ c.fillStyle = grad;
 c2.fillStyle = "black"
 c3.fillStyle = "black"
 c4.fillStyle = "#0477BF"
+c5.fillStyle = "black"
+c6.fillStyle = "black"
 c.beginPath();
 c.moveTo(0,0)
 c.lineTo(1090,0)
@@ -60,3 +64,12 @@ c5.bezierCurveTo(400, 40, 350, 150, 200, 150)
 c5.bezierCurveTo(70, 150, 50, 20, 0, 70)
 c5.closePath();
 c5.fill()
+
+c6.beginPath();
+c6.moveTo(-100, 200)
+c6.bezierCurveTo(80, -50, 180, 270, 300, 80)
+c6.bezierCurveTo(400, 0, 500, 200, 580, 160)
+c6.bezierCurveTo(750, 00, 900, 180, 1000, 100)
+c6.lineTo(1090, 200)
+c6.closePath()
+c6.fill()
