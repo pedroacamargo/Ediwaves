@@ -15,3 +15,8 @@
 barra , tijuca, atendimentos nas escolas
 
 grupos nas escolas, palestras, grupos no consultório
+
+Tarefas:
+    
+    - Director card for mobile screens
+    - Adjust the second menu (add a clickable btn to open and close the things)

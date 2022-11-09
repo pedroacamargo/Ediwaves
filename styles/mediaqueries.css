@@ -17,6 +17,8 @@
     --font01: 'Bitter', serif;
     --font02: 'Arvo', serif;
     --font03: 'Roboto Mono', monospace;
+    --font04: 'Qwitcher Grypen', cursive;
+    --font05: 'Dancing Script', cursive;
 }
 
 @media screen and (max-width: 768px) {
@@ -206,6 +208,75 @@
     
     .enterprise-director-section > .director{
         display: none;
+    }
+
+    .director-mobile-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lightblue;
+        max-width: 250px;
+        text-align: justify;
+        margin: auto;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.375);
+
+    }
+
+    .director-mobile-card-name strong {
+        font-family: var(--font05);
+        background-color: var(--cor07);
+        font-size: 2em;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+        position: relative;
+        top: -30px;
+    }
+
+    .director-mobile-card-subtitle {
+        width: 107%;
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-family: var(--font02);
+        background-color: gold;
+        color: black;
+        border: 1px solid black;
+        box-shadow: 5px 5px 20px black;
+    }
+
+    .director-mobile-card p {
+    }
+    
+    .director-mobile-card ul {
+        list-style: none;
+        text-indent: 20px;
+        background-color: lightyellow;
+        padding: 10px;
+        margin: -10px;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    .director-mobile-card ul li {
+        font-family: var(--font02);
+        
+    }
+
+
+    .director-mobile-card-img {
+        margin: 10px;
+        width: 150px;
+        height: 200px;
+        margin-top: -10px;
+        animation-name: img-square;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
 
     .characterer-name {
