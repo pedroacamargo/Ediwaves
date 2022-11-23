@@ -187,7 +187,7 @@
     }
 
     .transparency-gradient > .text-place > h1 {
-        font-size: 25vw;
+        font-size: 15vw;
     }
 
     .text-place > h2 {
@@ -283,17 +283,10 @@
     /*esterprise history*/
 
     .enterprise-history-section {
-        flex-direction: column;
+        display: none;
     }
 
-    .slide-item {
-        background-color: #000000db;
-        background-blend-mode: darken;
-    }
-
-    .slide-item:hover {
-        background-color: #00306000;
-    }
+    
     
     /*Specifications*/
     
