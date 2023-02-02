@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bitter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
@@ -28,7 +35,9 @@
     }
 
     .navbar {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         width: 100%;
     }
 
@@ -46,13 +55,27 @@
         margin: 2px 20px 2px 2px;
         border-radius: 5px;
         border: 1px solid black;
-        box-shadow: 1px 1px 5px black;
+        -webkit-box-shadow: 1px 1px 5px black;
+                box-shadow: 1px 1px 5px black;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
+        background-image: -webkit-gradient(linear, left top, right top, from(#11095c), to(blue));
+        background-image: -o-linear-gradient(left, #11095c, blue);
         background-image: linear-gradient(to right, #11095c, blue);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         overflow: hidden;
     }
 
@@ -63,6 +86,8 @@
         border-radius: 10px;
         position: relative;
         top: 30%;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
         transition: .5s;
     }
 
@@ -94,14 +119,18 @@
         z-index: 15;
         position: absolute;
         top: 100%;
+        background-image: -o-radial-gradient(rgb(14, 14, 248) 40%, #0104cf 70%);
         background-image: radial-gradient(rgb(14, 14, 248) 40%, #0104cf 70%);
         right: -80vw;
         border: 1px solid black;
         border-radius: 0 0 0 20px;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
         transition: 1s;
         opacity: 1;
         text-align: center;
-        box-shadow: 2px 2px 15px black;
+        -webkit-box-shadow: 2px 2px 15px black;
+                box-shadow: 2px 2px 15px black;
         text-shadow: 1px 1px 5px black;
     }
 
@@ -110,18 +139,24 @@
     }
 
     .linex {
-        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
         top: 27%;
     }
 
     .liney {
-        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
         top: 37%;
     }
 
     .linez {
         top: -20px;
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
 
     .mobile-btn {
@@ -135,6 +170,8 @@
         border-bottom: 2px solid black;
         border-left: 2px solid black;
         font-family: var(--font03);
+        -webkit-transition: .3;
+        -o-transition: .3;
         transition: .3;
     }
 
@@ -150,7 +187,9 @@
         background-color: #0477BF;
         color: black;
         text-shadow: 0 0 0 black;
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
         border-radius: 10px 0 0 10px;
     }
 
@@ -163,6 +202,8 @@
         position: absolute;
         left: 100vw;
         top: 70px;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
         transition: 1s;
     }
     
@@ -178,6 +219,8 @@
     }
 
     .transparency-gradient.t01 {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(90%, black));
+        background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, black 90%);
         background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, black 90%);
         background-position: 10% 10%;
     }
@@ -211,10 +254,19 @@
     }
 
     .director-mobile-card {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         background-color: lightblue;
         max-width: 250px;
         text-align: justify;
@@ -222,7 +274,8 @@
         padding: 10px;
         border: 1px solid black;
         border-radius: 10px;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.375);
+        -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.375);
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.375);
 
     }
 
@@ -238,15 +291,15 @@
     }
 
     .director-mobile-card-subtitle {
-        width: 107%;
+        width: 110%;
         text-align: center;
-        padding: 5px;
-        margin-bottom: 10px;
+        margin-bottom: -6px;
         font-family: var(--font02);
         background-color: gold;
         color: black;
         border: 1px solid black;
-        box-shadow: 5px 5px 20px black;
+        -webkit-box-shadow: 5px 5px 20px black;
+                box-shadow: 5px 5px 20px black;
     }
 
     .director-mobile-card ul {
@@ -255,6 +308,7 @@
         background-color: lightyellow;
         padding: 10px;
         margin: -10px;
+        margin-bottom: -26px;
         border-radius: 0px 0px 10px 10px;
     }
     
@@ -264,16 +318,23 @@
     }
 
 
+
+
     .director-mobile-card-img {
         margin: 10px;
         width: 150px;
         height: 200px;
         margin-top: -10px;
-        animation-name: img-square;
-        animation-duration: 10s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+        -webkit-animation-name: img-square;
+                animation-name: img-square;
+        -webkit-animation-duration: 10s;
+                animation-duration: 10s;
+        -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+                animation-direction: alternate;
     }
 
     .characterer-name {
