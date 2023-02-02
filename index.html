@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ediwaves</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles/default.css" media="all">
     <link rel="stylesheet" href="styles/mediaqueries.css">
 </head>
@@ -21,6 +25,7 @@
                 <a href="#about" class="btn about-btn">SOBRE</a>
                 <a href="#attendance" class="btn contacts-btn">ATENDIMENTOS</a>
                 <a href="#specifications-section" class="btn about-btn">ESPECIFICAÇÕES</a>
+                <a href="#carousel-quotes" class="btn about-btn">OPINIÕES</a>
             </div>
 
 
@@ -38,7 +43,6 @@
                 <a href="#attendance" class="mobile-btn contacts-btn">CONTATOS</a>
                 <a href="#specifications-section" class="mobile-btn about-btn">METODOLOGIA</a>
                 
-  
             </div>
             <!-- <div class="opacity-men" id="opacity"></div> -->
 
@@ -208,26 +212,50 @@
                 
                 
             </div>
-            <canvas id="canvas6" width="1000px" height="200px"></canvas>
+            <canvas id="canvas6" width="1000px" height="200px" class="d-lg-block d-none"></canvas>
         </div>
     </div>
 
-    <div class="quotes-section">
-        <div class="transparency-gradient t02">
-            <canvas id="canvas5" width="1000px" height="200px"></canvas>
-            <div class="quotes-section-wrapper">
-                <blockquote class="quote q01">
-                    <p><span>O trabalho que participei foi algo mágico, abrindo portas, visões essencias, a minha visão de futuro. O planejamento, o cronograma foi bem definido desde o início, não havendo possíveis enrolações, e a objetividado nas tarefas foi muito satisfatória. Todas as minhas vindas foram encontros de altos valores vivências, em nenhum momento "obrigados", sendo sempre valiosos. Gostei muito mesmo de ter participado do trabalho de orientação profissional, saio daqui com uma mente/visão mais aberta e aprimorada do que diz respeito as profissões e faculdades. Do fundo do meu coração, meus mais sinceros agradecimentos, Elsa!</span></p> <br>
-                        <cite class="qcite">Matheus, 17 anos - 3° ano EM</cite>
-                </blockquote>
-                <blockquote class="quote q02">
-                    <p class="p02"><span>Adorei o trabalho de orientação profissional. Uma ótima oportunidade, pois muitas pessoas tem muitas dúvidas do que fazer, e precisam de ajuda. Eu mesma estava "desesperada". O trabalho é muito bom e diversificado. Além disso, a Elsa se dedicou muito, tive muita atenção em todas as atividades e suas observações me ajudaram muito.</span></p> <br>
-                    <span class="tesst"><cite class="qcite">Ana Clara - Física Médica - 1° lugar UFRJ</cite></span>
-                </blockquote>
-                <blockquote class="quote q03">
-                    <p><span>A orientação profissional foi algo muito essencial para mim, pois por mais que já tivesse ideia do que fazer, eu precisava ter certeza de que realmente era aquilo. Além disso, fez com que eu me conhecesse mais e me ajudou a estar sempre preparada para as situações que eu possa enfrentar no trabalho.</span></p> <br>
-                        <cite class="qcite">Rafaela, 17 anos - 3° ano EM</cite>
-                </blockquote>
+    <div style="background-color: black;" class="container-fluid p-0 m-0 bg-black d-none d-lg-flex justify-content-center">
+        <div class="quotes-place m-5 d-flex justify-content-center">
+            <div style="padding: 50px;" id="carousel-quotes" class="carousel slide w-75 align-self-center" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-quotes" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-quotes" data-slide-to="1"></li>
+                    <li data-target="#carousel-quotes" data-slide-to="2"></li>
+                  </ol>
+
+                <!-- Carousel Inner -->
+                <div style="padding: 50px;" class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote>
+                            <p>O trabalho que participei foi algo mágico, abrindo portas, visões essencias, a minha visão de futuro. O planejamento, o cronograma foi bem definido desde o início, não havendo possíveis enrolações, e a objetividado nas tarefas foi muito satisfatória. Todas as minhas vindas foram encontros de altos valores vivências, em nenhum momento "obrigados", sendo sempre valiosos. Gostei muito mesmo de ter participado do trabalho de orientação profissional, saio daqui com uma mente/visão mais aberta e aprimorada do que diz respeito as profissões e faculdades. Do fundo do meu coração, meus mais sinceros agradecimentos, Elsa!</p> <br>
+                            <cite class="qcite">Matheus, 17 anos - 3° ano EM</cite>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote>
+                            <p>Adorei o trabalho de orientação profissional. Uma ótima oportunidade, pois muitas pessoas tem muitas dúvidas do que fazer, e precisam de ajuda. Eu mesma estava "desesperada". O trabalho é muito bom e diversificado. Além disso, a Elsa se dedicou muito, tive muita atenção em todas as atividades e suas observações me ajudaram muito.</p> <br>
+                            <cite class="qcite">Ana Clara - Física Médica - 1° lugar UFRJ</cite>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote>
+                            <p>A orientação profissional foi algo muito essencial para mim, pois por mais que já tivesse ideia do que fazer, eu precisava ter certeza de que realmente era aquilo. Além disso, fez com que eu me conhecesse mais e me ajudou a estar sempre preparada para as situações que eu possa enfrentar no trabalho.
+                            </p> <br>
+                            <cite class="qcite">Rafaela, 17 anos - 3° ano EM</cite>
+                        </blockquote>
+                    </div>
+                </div> <!-- End Carousel Inner-->
+                <button class="carousel-control-prev" type="button" data-target="#carousel-quotes" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-target="#carousel-quotes" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </button>
             </div>
         </div>
     </div>
@@ -249,5 +277,8 @@
     
 <script src="scripts/script.js"></script>
 <script src="scripts/canvas.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>
