@@ -304,7 +304,7 @@
 
     .director-mobile-card ul {
         list-style: none;
-        text-indent: 20px;
+        text-indent: 0;
         background-color: lightyellow;
         padding: 10px;
         margin: -10px;

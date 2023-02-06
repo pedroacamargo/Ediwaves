@@ -77,7 +77,7 @@
     border: 1px solid black;
 }
 
-.btn {
+.btnm {
     padding: 10px 10px;
     margin: 0px 10px;
     color: white;
@@ -89,7 +89,7 @@
     text-decoration: none;
 }
 
-.btn::after {
+.btnm::after {
     content: "";
     position: absolute;
     background-color: white;
@@ -104,11 +104,11 @@
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.459);
 }
 
-.btn:hover::after {
+.btnm:hover::after {
     width: 100%;
 }
 
-.btn:hover {
+.btnm:hover {
     text-shadow: 1px 1px 5px white;
 }
 
@@ -971,8 +971,8 @@ footer {
 
 .column {
     border-radius: 100px;
-    border: 1px solid black;
-    height: 100px;
+    border: 1px solid white;
+    height: 150px;
     width: 2px;
     background-color: white;
 }
@@ -996,6 +996,7 @@ footer {
     font-size: 1.4em;
     font-family: var(--font01);
     padding: 10px;
+    margin: 0;
 }
 address {
     padding: 10px;
@@ -1015,11 +1016,15 @@ address > .tel {
     font-family: var(--font03);
     color: white;
     font-weight: 600;
-    padding-bottom: 20px;
 }
 
 address > .mail {
     font-family: var(--font03);
     color: white;
     font-weight: 600;
+}
+
+.footer-btn {
+    width: 40px;
+    margin-top: 10px;
 }
