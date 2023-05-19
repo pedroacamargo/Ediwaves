@@ -8,13 +8,26 @@ This site was developed with HTML, CSS and JavaScript from scratch,without any f
 I made this website when I was starting my carreer in Computer Science, I was still in school, so for a 16 years old programmer, this website is well developed. <br>
 This was my first website and every single line of code was written by me, without any copy & paste from the internet, even the design and media was created by <strong>Pedro Camargo</strong>. <br>
 This website is 100% responsive, with a hamburger menu for mobile devices (the hamburger menu was built without any frameworks too, I know, a little messy but the final result was incredible xD). <br>
-### 1.2.1 Screeshots 
-<p align="center">
- 
 
+## Link
+
+>&nbsp;
+><br>
+You can check the website here -> <a href="https://pedroacamargo.github.io/projeto-ediwaves/" target="_blank" rel="external">Ediwaves Website</a>
+><br>
+>&nbsp;
+
+## Developed by:
+<table>
+<tr>
+ <th><strong><a href="https://github.com/pedroacamargo">Pedro Augusto Camargo</a></strong></th>
+</tr>
+<tr>
+ <td align="center"><img src="https://avatars.githubusercontent.com/u/98715404?s=400&u=1d27a23534700cfa2fb02fc716db89b023abb54d&v=4" width="150"></td>
+</tr>
+</table>
+<hr>
  
  
- 
- <a href="https://pedroacamargo.github.io/projeto-ediwaves/" target="_blank" rel="external">Website</a>
- ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/pedroacamargo/projeto-ediwaves) 
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/pedroacamargo/projeto-ediwaves) 
 ![GitHub last commit](https://img.shields.io/github/last-commit/pedroacamargo/projeto-ediwaves)
