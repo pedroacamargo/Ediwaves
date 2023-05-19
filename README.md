@@ -29,5 +29,5 @@ You can check the website here -> <a href="https://pedroacamargo.github.io/proje
 <hr>
  
  
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/pedroacamargo/projeto-ediwaves) 
-![GitHub last commit](https://img.shields.io/github/last-commit/pedroacamargo/projeto-ediwaves)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/pedroacamargo/Ediwaves) 
+![GitHub last commit](https://img.shields.io/github/last-commit/pedroacamargo/Ediwaves)
