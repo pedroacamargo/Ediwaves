@@ -13,7 +13,7 @@ This website is 100% responsive, with a hamburger menu for mobile devices (the h
 
 >&nbsp;
 ><br>
-You can check the website here -> <a href="https://pedroacamargo.github.io/projeto-ediwaves/" target="_blank" rel="external">Ediwaves Website</a>
+You can check the website here -> <a href="https://pedroacamargo.github.io/Ediwaves/" target="_blank" rel="external">Ediwaves Website</a>
 ><br>
 >&nbsp;
 
